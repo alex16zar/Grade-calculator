@@ -1,24 +1,15 @@
-# The code is not working. Can you please explain it during the class?
-function CalculateGrade(){
-  
+function calculator()
+        {
+            var ParticipationGrade =parseFloat(document.getElementById('participation').value*0.10);
+            var HomeworkGrade=parseFloat(document.getElementById('hw').value*0.1);
+            var QuizGrade=parseFloat(document.getElementById('quiz').value*0.1);
+            var M1Grade=parseFloat(document.getElementById('pm1').value*0.35);
+            var M2Grade=parseFloat(document.getElementById('pm2').value*0.35);
+            var CurrentGrade= ParticipationGrade+HomeworkGrade+QuizGrade+M1Grade+M2Grade;
 
-  var ParticipationPercent = parseFloat(document.getElementById("participationPercent").innerHTML);
-  var HomeworkPercent = parseFloat(document.getElementById("hwPercent").innerHTML);
-  var QuizPercent = parseFloat(document.getElementById("quizPercent").innerHTML);
-  var M1Percent = parseFloat(document.getElementById("pm1Percent").innerHTML);
-  var M2Percent = parseFloat(document.getElementById("pm2Percent").innerHTML);
+            var display=document.getElementById('outputGrade');
+            display.innerHTML='Your Current Grade Is ' + CurrentGrade;
+        }
 
-  
-  var MyParticipationPercent = parseFloat(document.getElementById("ParticipationGrade").value);
-  var MyHWPercent = parseFloat(document.getElementById("HomeworkGrade").value);
-  var MyQuizPercent = parseFloat(document.getElementById("QuizGrade").value);
-  var MyM1Percent = parseFloat(document.getElementById("M1Grade").value);
-  var MyM2Percent = parseFloat(document.getElementById("M2Grade").value);
-
-  var CurrentGrade = (MyParticipationPercent/100)*ParticipationPercent + (MyHWPercent/100)*HomeworkPercent + (MyQuizPercent/100)*QuizPercent + (MyM1Percent/100)*M1Percent + (MyM2Percent*100)/M2Percent
-
-console.log(CurrentGrade)
-document.getElementById("CurrentGrade").innerHTML = CurrentGrade;
-
-}
+        
 
