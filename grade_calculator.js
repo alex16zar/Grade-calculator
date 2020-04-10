@@ -1,4 +1,4 @@
-#This code is not working properly. If it isn't difficult could you explain why during the class.
+# This code is not working properly. If it isn't difficult could you explain why during the class.
 
 function CalculateGrade(){
   
