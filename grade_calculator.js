@@ -1,13 +1,12 @@
-# This code is not working properly. If it isn't difficult could you explain why during the class.
-
+# The code is not working. Can you please explain it during the class?
 function CalculateGrade(){
   
 
-  var ParticipationPercent = parseInt(document.getElementById("participationPercent").innerHTML);
-  var HomeworkPercent = parseInt(document.getElementById("hwPercent").innerHTML);
-  var QuizPercent = parseInt(document.getElementById("quizPercent").innerHTML);
-  var M1Percent = parseInt(document.getElementById("pm1Percent").innerHTML);
-  var M2Percent = parseInt(document.getElementById("pm2Percent").innerHTML);
+  var ParticipationPercent = parseFloat(document.getElementById("participationPercent").innerHTML);
+  var HomeworkPercent = parseFloat(document.getElementById("hwPercent").innerHTML);
+  var QuizPercent = parseFloat(document.getElementById("quizPercent").innerHTML);
+  var M1Percent = parseFloat(document.getElementById("pm1Percent").innerHTML);
+  var M2Percent = parseFloat(document.getElementById("pm2Percent").innerHTML);
 
   
   var MyParticipationPercent = parseFloat(document.getElementById("ParticipationGrade").value);
@@ -22,3 +21,4 @@ console.log(CurrentGrade)
 document.getElementById("CurrentGrade").innerHTML = CurrentGrade;
 
 }
+
