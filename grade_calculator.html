@@ -1,68 +1,87 @@
 <!DOCTYPE html>
 <html>
- <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width">
-   <title>repl.it</title>
-   <link href="style.css" rel="stylesheet" type="text/css" />
- </head>
- <body>
-  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>repl.it</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
    <script src="script.js"></script>
-   <div id = "header">
-     <h1>Student Grade Calculator</h1>
-     <h2>Inna Kocharyan</h2>
-     <h3>Course: CSE 120</h3>
-     
-   </div>
-
-   <table>
-
-    
-    <td>Assignment</td>
-    <td>Percentage</td>
-    <td>Grade</td>
-    <tr>
-    <td>Class Participation </td>
-    <td>10%</td>
-    <td><input type="number" id="participation" value=""></td>
-    </tr>
-
-    <tr>
-    <td>Homework</td>
-    <td>10%</td>
-    <td><input type="number" id="hw"  value=""></td>
-    </tr>
-
-    <tr>
-    <td>Quiz</td>
-    <td>10%</td>
-    <td><input type="number" id="quiz" value=""></td>
-    </tr>
-
-    <tr>
-    <td>Project Milestone 1</td>
-    <td>35%</td>
-    <td><input type="number" id="pm1" value=""></td>
-    </tr>
-
-     <tr>
-    <td>Project Milestone 2</td>
-    <td>35%</td>
-    <td><input type="number" id="pm2" value=""></td>
-    </tr>
-   </table>
-
-</p>
-    <input type="button" value="Calculate Your Grade"
-      onclick="calculator()">
-    <hr>
-    <div id="outputGrade" style="height: 50px; width: 100%;"></div>
-
-
+  <div id = "header">
+    <h1>Student Grade Calculator</h1>
+    <h2>Inna Kocharyan</h2>
+    <h3>Course: CSE 120</h3>
    
+  </div>
  
- </body>
-</html>
-
+  <div id = "grade_components">
+    <table>
+      <td>Assignment</td>
+      <td>Percentage</td>
+      <tr>
+        <td>Class Participation</td>
+        <td><span class = "PercentageGrade" id= "ParticipationPercent">10</span>%</td>
+      </tr>
+      <tr>
+        <td>Homework</td>
+        <td><span class = "PercentageGrade" id= "HWPercent">10</span>%</td>
+      </tr>
+      <tr>
+        <td>Quiz</td>
+        <td><span class = "PercentageGrade" id= "QuizPercent">10</span>%</td>
+      </tr>
+      <tr>
+        <td>Project Milestone 1</td>
+        <td><span class = "PercentageGrade" id= "PM1Percent">35</span>%</td>
+      </tr>
+      <tr>
+        <td>Project Milestone 2</td>
+        <td><span class = "PercentageGrade" id= "PM2Percent">35</span>%</td>
+     </table>
+    
+   </div>
+ 
+   <br>
+ 
+   <div id = "grade">
+     <table>
+       <td>Assignment</td>
+   <td>Grade</td>
+   <tr>
+   <td>Class Participation </td>
+   <td><input type="number" id="MyParticipation" value=""></td>
+   </tr>
+ 
+   <tr>
+   <td>Homework</td>
+   <td><input type="number" id="MyHW"  value=""></td>
+   </tr>
+ 
+   <tr>
+   <td>Quiz</td>
+   <td><input type="number" id="MyQuiz" value=""></td>
+   </tr>
+ 
+   <tr>
+   <td>Project Milestone 1</td>
+   <td><input type="number" id="MyPm1" value=""></td>
+   </tr>
+ 
+   <tr>
+   <td>Project Milestone 2</td>
+   <td><input type="number" id="MyPm2" value=""></td>
+   </tr>
+  </table>
+   </div>
   
+ 
+
+   <input type="button" value="Calculate Your Grade"
+     onclick="GradeCalculator()">
+   <hr>
+   <div id="outputGrade" style="height: 50px; width: 100%;"></div>
+  
+</body>
+</html>
+ 
