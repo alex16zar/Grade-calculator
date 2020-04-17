@@ -1,3 +1,17 @@
+function checkGrade(evt) {
+  var grade =parseFloat(evt.currentTarget.value);
+
+  if (grade > 100 || grade < 0) {
+    console.log("Wrong value")
+    evt.currentTarget.style.color = "red"
+  } else {
+    console.log("Correct Value")
+    evt.currentTarget.style.color = "black"
+
+  }
+
+}
+
 function GradeCalculator()
         {
             var ParticipationPercent =parseInt(document.getElementById('ParticipationPercent').innerHTML);
@@ -64,4 +78,3 @@ function LetterGrade() {
             display.innerHTML=' Current Letter Grade: ' + letter_grade;
       
       }
-      
