@@ -8,15 +8,17 @@ table, th, td {
 
 tr:nth-child(even) {background-color: pink;}
 
-tr:hover {background-color: white;}
+tr:hover {
+  background-color: white;
+}
+
+tr input:hover {
+  cursor: pointer;
+}
 
 h1 { color: black; font-family: 'Droid serif', serif; font-size: 36px; font-style: bold; }
 h2 {color: black; font-family: 'Droid serif', serif; font-style: italic; }
 h3{color: black; font-family: 'Droid serif', serif; font-style: italic; }
 
 tr {color: black; font-family: 'Droid serif', serif; }
-
-
-
-
 
